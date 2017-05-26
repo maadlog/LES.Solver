@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/javascript" src="http://numericjs.com/numeric/lib/numeric-1.2.6.js"></script>
+           <script type="text/javascript" src="./LES.Solver.js"></script>  
+    </head>
+<body>
+
+<input type="button" value="Toggle 3x3" onclick="toggle_3x3()"><br>
+
+<div id="A_matrix">
+	<p>Please enter in A the Square Matrix related to the LE System you need to solve</p>
+	
+	<h1>A</h1>
+	<input type="number" id="a11"> <input type="number" id="a12"> <input type="number" id="a13"> <br>
+	<input type="number" id="a21"> <input type="number" id="a22"> <input type="number" id="a23"> <br>
+	<input type="number" id="a31"> <input type="number" id="a32"> <input type="number" id="a33"> <br>
+</div>
+
+<div id="B_column">
+	<p>Please enter in B the column of independent terms</p>
+	<h1>B</h1>
+	<input type="number" id="b1"> <br>
+	<input type="number" id="b2"> <br>
+	<input type="number" id="b3"> <br>
+</div>
+<br>
+
+<input type="radio" name="method" id="jacobi" value="Jacobi" checked> Jacobi<br>
+<input type="radio" name="method" id="gauss-seidel" value="Gauss-Seidel"> Gauss-Seidel<br>
+<input type="number" id="epsilon" value="0.001"> Epsilon <br>
+<br>
+
+<input type="button" value="Solve" onclick="solve_a()">
+
+
+<p id="valid_diag_not_zero" style="display:none" >Diagonal has not zeroes </p>
+<p id="valid_diag_dominant" style="display:none" >A is diagonally dominant </p>
+<p id="valid_norm_of_T" style="display:none">||T|| < 1 </p>
+<p  id="valid_spectral_radius" style="display:none">&rho;(T) < 1 </p>
+
+</body>
+</html>
