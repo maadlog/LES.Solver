@@ -4,3 +4,5 @@ Simple solver for Linear Equation Systems, using either Jacobi or Gauss-Seidel m
 Available for systems with 2 or 3 unknown variables.
 
 Made posible using [Numeric.js](http://www.numericjs.com)
+
+*Work in progress, sorry for the horrid interface. Will be changed in further iterations*
