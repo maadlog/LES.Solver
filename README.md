@@ -1,2 +1,6 @@
-# SoLE.Solver
-Simple System of Linear Equations solver, using Jacobi or Gauss-Seidel methods
+# LES.Solver
+Simple solver for Linear Equation Systems, using either Jacobi or Gauss-Seidel methods of numeric analysis.
+
+Available for systems with 2 or 3 unknown variables.
+
+Made posible using [Numeric.js](http://www.numericjs.com)
